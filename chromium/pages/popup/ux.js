@@ -245,8 +245,8 @@ function addManualRule() {
 
     const escapedHost = escapeForRegex(url.host);
 
-    e("new-rule-regex").value = `^http://${escapedHost}/`;
-    e("new-rule-redirect").value = `https://${url.host}/`;
+    e("new-rule-regex").value = `^http:`;
+    e("new-rule-redirect").value = `https:`;
     e("new-rule-name").value = "Manual rule for " + url.host;
 
     e("add-new-rule-button").addEventListener("click", function() {
